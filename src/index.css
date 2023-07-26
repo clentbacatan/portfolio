@@ -1,13 +1,195 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    
+  }
+
+
+  #home {
+    font-family: 'Ubuntu', sans-serif;
+  }
+
+
+
+/* Media Queries */
+
+@media (min-width: 1024px) {
+
+    #home {
+        background-attachment: fixed;
+        background-position: center !important;
+        background-position-y: calc(-65%) !important;
+        background-size: cover ;
+        height: 90vh !important;
+        width: 100%;
+    }
+
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@media (min-width: 320px) {
+
+    #home {
+        background-position-x: calc(92%);
+    } 
 }
+
+@media (min-width: 375px) {
+
+    #projects {
+        
+      margin-left: 2%;
+        
+     }
+}
+
+
+@media screen and (max-width: 768px) {
+    
+    #about {
+        width: auto;
+        margin-left: 25px;
+        margin-right: 25px;
+       
+    }
+
+    .image {
+        /* margin-top: 65px; */
+        height: fit-content;
+    }    
+}
+
+@media only screen and (min-width: 425px) {
+     
+    #projects {
+        
+        margin-left: 35px;
+        margin-top: 50px;
+     }
+ 
+}
+
+@media only screen and (max-width: 780px) and (min-width: 481px) {
+        
+    .project-1 {
+        width: auto;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media only screen and (min-width: 767px) {
+    .project-1 {
+
+        margin-left: 50px;
+    }
+}
+
+
+/* @media (min-width: 375px) {
+     
+    #projects {
+        
+        margin-left: 5px;
+        margin-top: 50px;
+     }
+
+     
+} */
+
+
+/* For Projects page */
+
+/* @media screen and (max-width: 425px) {
+    
+    img {
+        padding-left: 50rem;
+    }
+} */
+
+.description {
+    margin: 0 auto;
+    max-width: 45ch;
+}
+
+
+
+/* ======== Apply 'Underline' design starts here ========= */
+section .title span::before,
+section .title span::after{
+  
+    content:" ";
+    background-color: orange;
+    position: absolute;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+section .title span::after{
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+
+/* Decorative button */
+
+.background {
+    
+    height: 100vh;
+    place-items: center;
+
+}
+
+.button {
+    color: red;
+    cursor: pointer;
+    line-height: 2.5rem;
+    transition: all 1s ease-in;
+    margin-left: 120px;
+   
+}
+
+.button:hover {
+    color:aqua;
+}
+
+.button svg {
+    height: 40px;
+    width: 23%;
+    position: absolute;
+    left: 10%;
+    top: 435px;
+}
+
+.button rect {
+    fill: none;
+    stroke: red;
+    stroke-width: 2;
+    stroke-dasharray: 500, 0;
+    transition: all 0.5s linear;
+    
+    
+  }
+
+  .button:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 20, 300;
+    stroke-dashoffset: 50;
+    stroke: orange;
+    transition: all 2s cubic-bezier(0.22, 1, 0.25, 0)
+  }
+
