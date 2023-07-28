@@ -19,7 +19,7 @@ const About = () => {
                         </p>
                     </div>
                     <div className='image pt-3 my-4 ml-5 flex justify-center md:ml-10 lg:mr-8 md:p-3 mr-3'>
-                        <img className='h-58 w-48 md:w-56 md:h-3/4 lg:w-[290px] lg:h-[380px] rounded-b-2xl rounded-t-3xl drop-shadow-xl shadow-slate-500' src='images/about.png' alt=''></img>
+                        <img className='h-58 w-48 md:w-56 md:h-3/4 lg:w-[290px] lg:h-[380px] rounded-b-2xl rounded-t-3xl drop-shadow-xl shadow-slate-500' src='images/about.png' alt='me'></img>
                     </div>
                     </div>
                 </div>
