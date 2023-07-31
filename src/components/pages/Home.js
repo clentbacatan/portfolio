@@ -40,7 +40,7 @@ const Home  = () => {
                 <h3 className="text-lg md:text-4xl lg:text-7xl font-semibold md:py-1 md:w-max">UI/UX Developer</h3>
                 <p className='text-sm md:text-lg md:py-1'>Please take a time to look around.</p>
 
-                <span className="background lg:text-2xl font-semibold">
+                <span className="background text-2xl font-semibold w-full">
                     <a href='/' className="button">
                     <svg>
                         <rect 
