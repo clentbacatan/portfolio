@@ -11,7 +11,7 @@ import SocialIcons from '../SocialIcons';
 
 const Home  = () => {
 
-    const image = '/images/myProfile3.png';
+    const image = process.env.PUBLIC_URL + '/images/myProfile3.png';
 
     //Social Media Handle
 
