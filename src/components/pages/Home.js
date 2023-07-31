@@ -41,7 +41,7 @@ const Home  = () => {
                 <p className='text-sm md:text-lg md:py-1'>Please take a time to look around.</p>
 
                 <span className="background text-2xl font-semibold w-full">
-                    <a href='/' className="button">
+                    <a href='https://drive.google.com/file/d/1Xc_-6vw0h1CjI-Qc-7LtzdVrEoFTjtbD/view?usp=sharing' className="button">
                     <svg>
                         <rect 
                         x='0'

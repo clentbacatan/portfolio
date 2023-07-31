@@ -38,10 +38,10 @@ const Navbar = () => {
             <h1 className="w-full md:w-8 lg:ml-28 md:ml-7 text-3xl font-medium">CB</h1>
         {/* The "hidden md:flex" is when the display is in medium size, it will be flex */}
         <ul className="hidden md:flex md:flex-row">
-            <li className="p-5 font-serif font-black text-xl" href="">About</li>
-            <li className="p-5 font-serif font-black text-xl" href="#projects">Projects</li>
-            <li className="p-5 font-serif font-black text-xl" ><a href="#about">Tools</a></li>
-            <li className="p-5 font-serif font-black text-xl" href="#contact">Contact</li>
+            <li className="p-5 font-serif font-black text-xl"><a href="#about">About</a></li>
+            <li className="p-5 font-serif font-black text-xl"><a href="#projects">Projects</a></li>
+            <li className="p-5 font-serif font-black text-xl" ><a href="#tools">Tools</a></li>
+            <li className="p-5 font-serif font-black text-xl"><a href="#contact">Contact</a></li>
         </ul>
 
         {/* If clicked the 'AioutlineClose' will render */}
