@@ -4,23 +4,27 @@ const projectData = [
 
         name: 'Capstone 1',
         image: 'images/project1.jpg',
-        description: 'A responsive static web portfolio using HTML5, CSS3 and Bootstrap framework.'
+        description: 'A responsive static web portfolio using HTML5, CSS3 and Bootstrap framework.',
+        site: 'https://clentbacatan.github.io/webportfolio/',
+        code: 'https://github.com/clentbacatan/webportfolio'
     },
 
     {
         name: 'Capstone 2',
         image: 'images/project2.jpg',
-        description: 'Create and structured an E-commerce backend API using Node and Express for the Backend.'
+        description: 'Created an E-commerce backend API using Node.js and Express.js',
+        code: 'https://gitlab.com/b253-bacatan/e-commerce-api'
 
     },
 
     {
         name: 'Capstone 3',
         image: 'images/project3.jpg',
-        description: 'Functional E-commerce website using React for the frontend and Express.js for the backend.'
+        description: 'Functional E-commerce website using React with Bootstrap framework integrated with an API.',
+        site: 'https://e-commerce-app-navy.vercel.app/',
+        code: 'https://gitlab.com/b253-bacatan/fullstack'
     }
 ]; 
-
 
 //this function is deconstructing an array of objects:
 
@@ -38,6 +42,5 @@ const projectData = [
 // return acc;
 
 // }, {})
-
 
 export default projectData;

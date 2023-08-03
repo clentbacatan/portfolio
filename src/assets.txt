@@ -1,4 +1,0 @@
-
-TEXTS:
-// name font: Ubuntu
-   texts font: 

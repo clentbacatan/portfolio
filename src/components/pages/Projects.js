@@ -1,38 +1,43 @@
-
-import { hover } from '@testing-library/user-event/dist/hover';
 import React from 'react';
 import ProjectCard from '../ProjectCard';
 import projectData from '../../data/projects';
 
     
 const Projects = () => {
-
-    console.log(projectData);
     
-    // ProjectCard returns the 'return' statement from the 'ProjectCard' component and the 'project' is now a parameter to 'ProjectCard' component and can be interchanged.
-
+  // ProjectCard returns the 'return' statement from the 'ProjectCard' component and the 'project' is now a parameter to 'ProjectCard' component and can be interchanged.
     
-
-    return (
-      <section className="flex flex-col">
-         <div className='w-full min-h-full lg:h-[600px] px-2 bg-white-900 mb-5 mt-8 md:mt-20 bg-zinc-50 md:flex md:flex-col md:justify-center md:pb-14 md:px-auto'>
-          <h1 className='title lg:text-4xl text-xl mb-6 font-medium text-center lg:mt-24 md:mb-8 pt-6'><span className='relative'>Projects</span></h1>
-            <div id="projects" className='md:flex md:flex-row md:justify-around lg:mx-10 md:mx-5 md:mt-5 md:space-x-3'>
-              <div className='mb-10 grid lg:grid-cols-1'>
-                <ProjectCard project={projectData[0]}/>
-              </div>
-              <div className='prj-1 mb-10 grid lg:grid-cols-1'>
-                <ProjectCard project={projectData[1]}/>
-              </div>
-              <div className='mb-10 grid lg:grid-cols-1'>
-                <ProjectCard project={projectData[2]}/>
-                <p className='lg:ml-24 lg:mt-4 lg:font-bold text-center'>This is still on development process</p>
-              </div>
-          </div>
+  return (
+      <section>
+        <div className='bg-gray-50 md:-mt-9 mt-16 md:h-full w-auto'>
+            <h1 className='project-title lg:text-4xl text-xl mb-6 font-medium text-center lg:mt-24 md:mb-8 pt-6'><span className='relative'>Projects</span></h1>
+          <div className='flex-container flex flex-col content-around mx-3'>
+            <div className='grid-container md:grid md:grid-cols-3 md:gap-7 md:p-16'>
+              <div className=''>
+                    <ProjectCard project={projectData[0]}/>
+                  <div className="parent-prj-btn flex flex-row justify-evenly mt-5">
+                      <button className="site-btn"><a href={projectData[0].site}>View Site</a></button>
+                      <button className="code-btn"><a href={projectData[0].code}>Source Code</a></button>
+                  </div>
+                </div>
+                <div className=''>
+                    <ProjectCard project={projectData[1]}/>
+                  <div className="parent-prj-btn flex flex-row justify-evenly mt-5">
+                      <button className="code-btn"><a href={projectData[1].code}>Source Code</a></button>
+                  </div>
+                </div>
+                <div className=''>
+                    <ProjectCard project={projectData[2]}/>
+                  <div className="parent-prj-btn flex flex-row justify-evenly mt-5">
+                      <button className="site-btn"><a href={projectData[2].site}>View Site</a></button>
+                      <button className="code-btn"><a href={projectData[2].code}>Source Code</a></button>
+                  </div>
+                </div>
+              </div>  
+            </div>
         </div> 
-      </section>  
-       
-     );
+      </section>   
+  );
 }
  
 export default Projects;

@@ -11,16 +11,162 @@
     text-decoration: none;
     scroll-behavior: smooth;
     
-  }
+}
 
 
-  #home {
+#home {
     font-family: 'Ubuntu', sans-serif;
-  }
+}
 
 
 
-/* Media Queries */
+
+
+/* =============== Projects Section style start ================ */
+
+.description {
+    margin: 0 auto;
+    max-width: 45ch;
+}
+
+.prj-image img {
+    border-radius: 18px;
+}
+
+
+
+.site-btn,
+.code-btn{
+    border: 1px solid cyan;
+    border-style: groove;
+    border-radius: 12px;
+    padding: 4px;
+    background-color: rgba(128, 128, 128, 0.177);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.site-btn:hover,
+.code-btn:hover {
+    background-color: orange;
+}
+
+
+
+
+
+/* =============== Projects Section style end ================ */
+
+
+
+
+
+
+
+/* =============== Form Section style start ================ */
+
+input::placeholder, textarea::placeholder{
+    color: red;
+    opacity: calc(30%);
+    font-size: larger;
+    font-family: 'Ubuntu', sans-serif;
+
+}
+
+.submit-button {
+    margin: 0 auto;
+    width: 10rem;
+}
+
+
+/* =============== Form Section style end ================ */
+
+
+/* ======== Underline Design to Page title starts here ========= */
+
+section .title span::before,
+section .title span::after{
+  
+    content:" ";
+    background-color: orange;
+    position: absolute;
+    height: 3px;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    
+}
+
+section .title span::after{
+  bottom: -7px;
+  width: 70%;
+  left: 50%;
+  transform: translateX(-50%);
+
+}
+
+/* ======== Underline Design to Page title ends here ========= */
+
+
+/* ========== Download CV Button style starts here ============== */
+
+.CV-button { 
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+    
+}
+
+.CV-button span {
+    height: 100px;
+    position: relative;
+    margin-right: 225px;
+    
+}
+
+.download-button svg {
+    /* background-color: blue; */
+    position: absolute;
+    width: 170px;
+    height: 40px;
+    top: -2px;
+    right: -7px;
+    stroke: red;
+    stroke-width: 2;
+}
+
+.download-button {
+    color: red;
+    cursor: pointer;
+    line-height: 2.5rem;
+    transition: all 1s ease-in;  
+   
+}
+
+.download-button:hover {
+    color:aqua;
+}
+
+.download-button rect {
+    fill: none;
+    stroke: red;
+    stroke-width: 2;
+    stroke-dasharray: 500, 0;
+    transition: all 0.5s linear;  
+}
+
+.download-button:hover rect {
+    stroke-width: 5;
+    stroke-dasharray: 20, 300;
+    stroke-dashoffset: 50;
+    stroke: orange;
+    transition: all 2s cubic-bezier(0.22, 1, 0.25, 0)
+}
+
+/* ========== Download CV Button style ends here ============== */
+
+
+/* ============ Media Queries starts here ============== */
 
 @media (min-width: 1024px) {
 
@@ -96,108 +242,45 @@
 
 @media only screen and (max-width:768px) {
 
-    span .button{
+    .download-button{
         display: none;
         width: auto;
     }
 }
 
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
 
-/* @media (min-width: 375px) {
-     
-    #projects {
-        
-        margin-left: 5px;
-        margin-top: 50px;
-     }
-
-     
-} */
-
-
-/* For Projects page */
-
-/* @media screen and (max-width: 425px) {
-    
-    img {
-        padding-left: 50rem;
+    .prj-description {
+        font-size: 12px;
     }
-} */
+}
 
-.description {
-    margin: 0 auto;
-    max-width: 45ch;
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+
+    .prj-container {
+        max-width: 230px;
+        height: 80px;
+        margin-bottom: -30px;
+       
+        
+    }
+}
+
+@media only screen and (min-width: 1024px) {
+
+    .prj-container {
+        max-width: fit-content;
+        height: 100px;
+    }
 }
 
 
 
-/* ======== Apply 'Underline' design starts here ========= */
-section .title span::before,
-section .title span::after{
-  
-    content:" ";
-    background-color: orange;
-    position: absolute;
-    height: 3px;
-    bottom: 0;
-    left: 0;
-    width: 100%;
-    
+@media only screen and (min-width: 1024px) {
+    .prj-description {
+        font-size: 20px;
+    }
 }
 
-section .title span::after{
-  bottom: -7px;
-  width: 70%;
-  left: 50%;
-  transform: translateX(-50%);
-}
-
-
-/* Decorative button */
-
-.background {
-    
-    height: 100vh;
-    place-items: center;
-
-}
-
-.button {
-    color: red;
-    cursor: pointer;
-    line-height: 2.5rem;
-    transition: all 1s ease-in;
-    margin-left: 120px;
-   
-}
-
-.button:hover {
-    color:aqua;
-}
-
-.button svg {
-    height: 40px;
-    width: 23%;
-    position: absolute;
-    left: 10%;
-    top: 435px;
-}
-
-.button rect {
-    fill: none;
-    stroke: red;
-    stroke-width: 2;
-    stroke-dasharray: 500, 0;
-    transition: all 0.5s linear;
-    
-    
-  }
-
-  .button:hover rect {
-    stroke-width: 5;
-    stroke-dasharray: 20, 300;
-    stroke-dashoffset: 50;
-    stroke: orange;
-    transition: all 2s cubic-bezier(0.22, 1, 0.25, 0)
-  }
+/* ============ Media Queries ends here ============== */
 
