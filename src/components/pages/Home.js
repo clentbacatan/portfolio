@@ -2,7 +2,6 @@
 import  React, {useState} from 'react'
 import {AiOutlineDoubleRight, AiOutlineDoubleLeft} from 'react-icons/ai';
 import SocialIcons from '../SocialIcons';
-import About from './About';
 
 // The "leading" makes space between the contexts
 //"gap" apply to the parent div to give more space to the child

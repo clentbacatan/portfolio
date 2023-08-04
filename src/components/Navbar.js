@@ -1,5 +1,5 @@
 import React, {useState, useEffect} from "react";
-import { AiOutlineMenu, AiOutlineClose, AiOutlineDoubleRight} from 'react-icons/ai';
+import { AiOutlineMenu, AiOutlineClose} from 'react-icons/ai';
 import  SocialIcons from '../components/SocialIcons';
 
 
