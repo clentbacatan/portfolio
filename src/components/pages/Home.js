@@ -36,11 +36,13 @@ return (
     }}>
         <div className='grid sm:grid-cols-5 lg:pl-5 w-screen text-center lg:ml-14 lg:mt-3'>
             <div className='md:text-left md:mt-[100px] text-center sm:ml-12 md:pl-12 md:py-3 sm:flex flex-col md:flex-col md:mx-auto -mt-8'>
-            <p className="text-xl md:text-3xl md:ml-0 -tracking-normal md:py-1">Hi there, I'm Clent</p>
-            <h3 className="text-lg md:text-4xl lg:text-7xl font-semibold md:py-1 md:w-max">UI/UX Developer</h3>
-            <p className='text-sm md:text-lg md:py-1'>Please take a time to look around.</p>
+            <div className='welcome-msg'>
+                <p className="text-xl md:text-3xl md:ml-0 -tracking-normal md:py-1">Hi there, I'm Clent</p>
+                <h3 className="text-lg md:text-4xl lg:text-7xl font-semibold md:py-1 md:w-max">UI/UX Developer</h3>
+                <p className='text-sm md:text-lg md:py-1'>Please take a time to look around.</p>
+            </div>
                 <div className='CV-button'>
-                    <span className=" text-2xl font-semibold download-button">Download CV
+                    <span className="text-2xl font-semibold download-button">Download CV
                         <a href='https://drive.google.com/file/d/1Xc_-6vw0h1CjI-Qc-7LtzdVrEoFTjtbD/view?usp=sharing'>
                             <svg>
                                 <rect 

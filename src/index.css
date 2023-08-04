@@ -181,6 +181,47 @@ section .title span::after{
 
 }
 
+@media only screen and (min-width: 640px) and (max-width: 766px) {
+
+    .welcome-msg {
+        width: 40vw;
+        position: relative;
+        top: 200px;
+        
+        
+    }
+
+    .welcome-msg p, .welcome-msg h3 {
+        font-size: 4vw;
+        line-height: 1.1;
+    }
+
+    .welcome-msg h3 {
+        padding: 5px;
+    }
+}
+
+
+@media only screen and (min-width: 766px) and (max-width: 769px) {
+
+    .welcome-msg {
+        position: relative;
+        top: 150px;
+        width: 300px;
+    }
+
+    
+    .welcome-msg p, .welcome-msg h3 {
+        font-size: 4vw;
+        line-height: 1.1;
+    }
+
+    .welcome-msg h3 {
+        padding: 5px;
+    }
+}
+
+
 @media (min-width: 320px) {
 
     #home {
@@ -246,6 +287,32 @@ section .title span::after{
         display: none;
         width: auto;
     }
+}
+
+
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+
+    .download-button {
+        height: 25px;
+        width: 275px;
+        position: relative;
+        margin-left: 25px;
+        
+    }
+
+    .download-button svg {
+        height: 50%;
+        position: absolute;
+        left: -8px;
+        
+    }
+
+    #about {
+        width: auto;
+    }
+
+
 }
 
 @media only screen and (min-width: 768px) and (max-width: 1023px) {

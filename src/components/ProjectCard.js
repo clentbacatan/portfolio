@@ -1,7 +1,7 @@
 import React from "react";
 
 // The 'props' is the data coming from the page'ProjectCard', sa 'ProjectCard' naay property called 'project' which is equal to the 'projectData' from 'projects', so the property 'project' from 'Project' pages will now be equivalent to the parameter 'props' here. 
-      
+
 
 const ProjectCard = (props) => {
 

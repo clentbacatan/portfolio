@@ -1,5 +1,5 @@
 import React from 'react'
-import { Route, HashRouter } from 'react-router-dom';
+import { Route, BrowserRouter as Router } from 'react-router-dom';
 import {Routes} from 'react-router-dom';
 import './index.css';
 import Navbar from './components/Navbar'
@@ -15,7 +15,7 @@ function App() {
     
   return (
     <div>
-    <HashRouter>
+    <Router>
       <Navbar />
         <Routes>
             <Route path="/" element={<Wholepage/>}/>
@@ -25,7 +25,7 @@ function App() {
             <Route path="/contact" element={<Contact/>}/>   
             <Route path="/contactform" element={<ContactForm />}/>
         </Routes>
-    </HashRouter>
+    </Router>
     </div>
   );
   
