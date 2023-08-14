@@ -15,7 +15,7 @@ const ProjectCard = (props) => {
             </div>
             <div className="card-img">
                 <div className="prj-image md:mt-5 drop-shadow-2xl">
-                    <a href="/"><img src={props.project.image} className="hover:opacity-40" alt="/"/></a>
+                    <a href="/"><img src={props.project.image} className="" alt="/"/></a>
                 </div>
             </div>
        </div>

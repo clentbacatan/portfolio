@@ -53,6 +53,20 @@
 
 
 
+.project-3:hover::after {
+    content: "Ongoing Project";
+    opacity: 2.5;
+    position: absolute;
+    bottom: 200px;
+    left: 175px;
+    font-weight: 700;
+    font-size: larger;
+}
+
+.project-3:hover {
+    opacity: 0.58;
+}
+
 
 
 /* =============== Projects Section style end ================ */
