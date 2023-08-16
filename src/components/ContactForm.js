@@ -100,8 +100,6 @@ const ContactForm = () => {
                     name='email'
                     value={email}
                     onChange={handleEmail}
-                    
-                    
                     />
                     <textarea className="m-2 p-3" placeholder='Your Message Here' name='message' cols='30' rows='10'/>
 

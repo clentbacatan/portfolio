@@ -48,10 +48,10 @@ import  SocialIcons from '../components/SocialIcons';
         <div className={!nav ? "fixed left-0 top-0 w-{60%} border-r h-full mr-3 transition ease-in-out duration-500 bg-blue-50" :"fixed h-full -left-20 top-0.5 transition ease-in-out duration-500"}>
             <h1 className="w-full text-3xl ml-5 mt-5 font-medium">CB</h1>
             <ul className="pt-4">
-                <li onClick={handleNav} className="p-5 font-serif"><a href="#about">About</a></li>
-                <li onClick={handleNav} className="p-5 font-serif" ><a href="#projects">Projects</a></li>
-                <li onClick={handleNav} className="p-5 font-serif" ><a href="#tools">Tools</a></li>
-                <li onClick={handleNav} className="p-5 font-serif"><a href="#contact">Contact</a></li>
+                <li onClick={handleNav} className="p-5 font-serif"><a href="/about">About</a></li>
+                <li onClick={handleNav} className="p-5 font-serif" ><a href="/project">Projects</a></li>
+                <li onClick={handleNav} className="p-5 font-serif" ><a href="/skills">Tools</a></li>
+                <li onClick={handleNav} className="p-5 font-serif"><a href="/contactform">Contact</a></li>
             </ul>
 
         {/* Social Media Handles */}
