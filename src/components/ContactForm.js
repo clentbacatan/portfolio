@@ -10,49 +10,50 @@ const ContactForm = () => {
 
 
     const [email, setEmail] = useState('')
-    const [active, setActive] = useState(false)
+    const [active, setActive] = useState(true)
 
-    const pattern = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/
-    
-    
+
     function handleEmail(e) {
-        
-        const newEmail = e.target.value;
- 
-        setEmail(newEmail)
+        const pattern = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/
+        const buttons =  document.getElementById('submit-button');
+      
+        const newEmail = e.target.value
+        setEmail(newEmail);
      
         if(pattern.test(newEmail)) {
-            setActive(a => true)
+            setActive(false);
+            buttons.removeAttribute("type")
+    
+        } else if (newEmail === '') {
+            setActive(true);
+            buttons.setAttribute("type", "button")
+         
+        } else {
+            setActive(true);
         }
 
     }
 
-    
-    function removeAttribute () {
-        const buttons =  document.getElementById('submit-button');
-        buttons.removeAttribute("type")
-     }
 
+    // useEffect(() => {
 
-    useEffect(() => {
+    //     pattern.test(email)
 
-        pattern.test(email)
-
-        if (pattern.test(email)) {
-            console.log(email)
-            setActive(a => false);
-            removeAttribute()
+    //     if (pattern.test(email)) {
+    //         console.log(email)
+    //         setActive(a => false);
+    //         removeAttribute()
  
-        } else if(email === '') {
-            setActive(a => true);
+    //     } else if(email === '') {
+    //         setActive(a => true);
 
-        } else {
-            setActive(a => true);
+    //     } else {
+    //         setActive(a => true);
                    
         
-        }
+    //     }
         
-    },[email]);
+    // },[email]);
   
 
     return ( 
@@ -70,6 +71,7 @@ const ContactForm = () => {
                     name='email'
                     value={email}
                     onChange={handleEmail}
+                    
                     
                     />
                     <textarea className="m-2 p-3" placeholder='Your Message Here' name='message' cols='30' rows='10'/>
