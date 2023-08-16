@@ -12,14 +12,17 @@ const ContactForm = () => {
     const [email, setEmail] = useState('')
     const [active, setActive] = useState(true)
 
-
+    const pattern = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/
+    
+    
     function handleEmail(e) {
-        const pattern = /^([a-zA-Z0-9_\-\.]+)@([a-zA-Z0-9_\-\.]+)\.([a-zA-Z]{2,5})$/
+        
         const buttons =  document.getElementById('submit-button');
-      
+
         const newEmail = e.target.value
         setEmail(newEmail);
-     
+        console.log(newEmail);
+    
         if(pattern.test(newEmail)) {
             setActive(false);
             buttons.removeAttribute("type")
@@ -32,8 +35,34 @@ const ContactForm = () => {
             setActive(true);
         }
 
-    }
+        return newEmail;
 
+    }
+    
+    function handleButton() {
+        if(email === '') {
+            swal({
+                title: 'Oops!',
+                text: 'Please enter your email address',
+                icon: 'error',
+            });
+        } else if (pattern.test(email)) {
+            swal({
+                title: 'Yay!!',
+                text: 'Thank you for your message',
+                icon: 'success',
+            });
+        
+        } else {
+            swal({
+                title: 'Oops!',
+                text: 'Please enter a valid email address',
+                icon: 'error',
+            });
+        }
+               
+        
+    }
 
     // useEffect(() => {
 
@@ -77,7 +106,8 @@ const ContactForm = () => {
                     <textarea className="m-2 p-3" placeholder='Your Message Here' name='message' cols='30' rows='10'/>
 
                      <button id="submit-button" type="button"
-                 
+                     onClick={handleButton}
+              
                      className={active ? 'submit-button border-2 rounded-full border-solid border-cyan-300 py-2 mt-4 font-semibold text-xl enabled:opacity-25' : 'submit-button border-2 rounded-full border-solid border-cyan-300 py-2 mt-4 font-semibold text-xl disabled:opacity-75'}
                      >Send</button>
                 </form>
