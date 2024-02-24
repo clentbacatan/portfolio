@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, {useState, useEffect} from 'react'
 import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 import SocialIcons from './SocialIcons';
 
@@ -33,14 +33,14 @@ const Navbar = () => {
     })
  
     return (
-     <nav class={undefined}>
-      <div class={style.logoBurgerContainer}>
+     <nav className={undefined}>
+      <div className={style.logoBurgerContainer}>
        
-       <div class={style.logoContainer}>
-           <h1 class={style.logo}><a href="/">CB</a></h1>
+       <div className={style.logoContainer}>
+           <h1 className={style.logo}><a href="/">CB</a></h1>
        </div>
 
-       <div class={style.burger}>
+       <div className={style.burger}>
          <button onClick={handleNav}>
            {nav ? <AiOutlineMenu size={24}/> : <AiOutlineClose size={24}/>}
           </button> 
@@ -48,31 +48,31 @@ const Navbar = () => {
       </div>
           
       <div>
-        <ul class="hidden md:flex md:flex-row">
-          <li class="p-5 font-serif font-black text-xl"><a href="/about">About</a></li>
-          <li class="p-5 font-serif font-black text-xl"><a href="/project">Projects</a></li>
-          <li class="p-5 font-serif font-black text-xl" ><a href="/skills">Tools</a></li>
-          <li class="p-5 font-serif font-black text-xl"><a href="/contactform">Contact</a></li>
+        <ul className="hidden md:flex md:flex-row">
+          <li className="p-5 font-serif font-black text-xl"><a href="/about">About</a></li>
+          <li className="p-5 font-serif font-black text-xl"><a href="/project">Projects</a></li>
+          <li className="p-5 font-serif font-black text-xl" ><a href="/skills">Tools</a></li>
+          <li className="p-5 font-serif font-black text-xl"><a href="/contactform">Contact</a></li>
         </ul>
       </div>
 
       {/* SideNav */}
            
-      <div class={!nav ? style.sideNav : style.sideNavHidden}>
+      <div className={!nav ? style.sideNav : style.sideNavHidden}>
         <div>
-         <div class="w-full text-3xl ml-5 mt-5 font-medium">CB</div>
+         <div className="w-full text-3xl ml-5 mt-5 font-medium">CB</div>
         </div>
         
-        <div id="sideNav" class={style.sideNavListContainer}>
-          <ul class={style.sideNavLists}>
-              <li onClick={handleNav} class=""><a href="/about">About</a></li>
-              <li onClick={handleNav} class="" ><a href="/project">Projects</a></li>
-              <li onClick={handleNav} class="" ><a href="/skills">Tools</a></li>
-              <li onClick={handleNav} class=""><a href="/contactform">Contact</a></li>
+        <div id="sideNav" className={style.sideNav}>
+          <ul className={style.sideNavLists}>
+              <li onClick={handleNav} className=""><a href="/about">About</a></li>
+              <li onClick={handleNav} className="" ><a href="/project">Projects</a></li>
+              <li onClick={handleNav} className="" ><a href="/skills">Tools</a></li>
+              <li onClick={handleNav} className=""><a href="/contactform">Contact</a></li>
            </ul>
         </div>
         
-        <div class='sm:flex mr-1'>
+        <div className='sm:flex mr-1'>
             <SocialIcons />
         </div>
       </div>
