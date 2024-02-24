@@ -18,8 +18,8 @@ function App() {
     <Router>
       <Navbar />
         <Routes>
-            <Route path="/" element={<Wholepage/>}/>
-            <Route path="/about" element={<About/>}/>
+            {/* <Route path="/" element={<Wholepage/>}/> */}
+            {/* <Route path="/about" element={<About/>}/> */}
             <Route path="/project" element={<Projects/>}/>
             <Route path="/skills" element={<Skills/>}/>
             <Route path="/contact" element={<Contact/>}/>   

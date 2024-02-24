@@ -18,6 +18,18 @@
     font-family: 'Ubuntu', sans-serif;
 }
 
+/* =========== NavBar =============== */
+#sideNav ul li::before,
+#sideNav ul li::after {
+   content:"test";
+   background-color: orange;
+   position: absolute;
+   margin-bottom: 5%;
+   right: 3.5rem;
+   width: 100%;
+   
+}
+
 
 
 
