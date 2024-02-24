@@ -63,7 +63,7 @@ const Navbar = () => {
          <div className="w-full text-3xl ml-5 mt-5 font-medium">CB</div>
         </div>
         
-        <div id="sideNav" className={style.sideNav}>
+        <div id="sideNav" className={style.sideNavLists}>
           <ul className={style.sideNavLists}>
               <li onClick={handleNav} className=""><a href="/about">About</a></li>
               <li onClick={handleNav} className="" ><a href="/project">Projects</a></li>
@@ -92,8 +92,5 @@ const style = {
   sideNav: "fixed left-0 top-0 w-9/12 border-r h-full mr-3 transition ease-in-out duration-500 bg-blue-100 font-poppins",
   sideNavHidden: "fixed h-full -left-2/4 top-0.5 transition ease-in-out duration-500 ",
   sideNavLists: "font-serif font-black ml-4 h-80 flex flex-col justify-around text-xl bg-red-100 md:flex md:flex-row"
-
-
-
 }
   
